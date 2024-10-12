@@ -9,11 +9,13 @@ public class TeamTest {
 
     Team team;
     Team team2;
+    Team team3;
 
     @BeforeEach
     public void setup() {
         team = new Team("test-team"); 
         team2 = new Team("test-team2");
+        team3 = new Team("test-team");
     }
 
     @Test
@@ -49,6 +51,28 @@ public class TeamTest {
    @Test
    public void hash_code_equals_false() {
         assertEquals(false, team.hashCode() == team2.hashCode());
+   }
+
+   @Test
+   public void team_members_returns_false() {
+        team.addMember("Joe");
+        team2.addMember("Bob");
+        assertEquals(false, team.equals(team2));
+   }
+
+   @Test
+   public void team_members_returns_true(){
+        team.addMember("Joe");
+        team2.addMember("Joe");
+        assertEquals(false, team.equals(team2));
+   }
+
+   @Test
+   public void team_name_same(){
+        team.addMember("Joe");
+        assertEquals(false, team.equals(team3));
+        team3.addMember("Joe");
+        assertEquals(team, team3);
    }
 
 }
