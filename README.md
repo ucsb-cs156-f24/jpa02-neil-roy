@@ -1,12 +1,9 @@
 # jpa02-neil-roy
 
 
-* TODO: Correct the links to repo below, 
-  then delete this TODO.  Replace it with 
-  a link to your repo, e.g. 
-  https://github.com/ucsb-cs156-f24/jpa02-cgaucho
 
-Repo: https://ucsb-cs156-f24/STARTER-jpa02
+Repo: https://github.com/ucsb-cs156-f24/jpa02-neil-roy
+
 
 
 Deployed at: https://jpa02-neil-roy.dokku-09.cs.ucsb.edu
